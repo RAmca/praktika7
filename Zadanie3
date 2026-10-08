@@ -1,51 +1,54 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include<locale.h>
 
 int main() {
+    setlocale(LC_ALL, "Russian");
     char ch;
 
     printf("Введите знак препинания: ");
     scanf("%c", &ch);
 
     switch (ch) {
-        case '.':
-            printf("Точка\n");
-            break;
-        case ',':
-            printf("Запятая\n");
-            break;
-        case ';':
-            printf("Точка с запятой\n");
-            break;
-        case ':':
-            printf("Двоеточие\n");
-            break;
-        case '!':
-            printf("Восклицательный знак\n");
-            break;
-        case '?':
-            printf("Вопросительный знак\n");
-            break;
-        case '-':
-            printf("Тире или дефис\n");
-            break;
-        case '"':
-            printf("Кавычки\n");
-            break;
-        case '\'':
-            printf("Апостроф\n");
-            break;
-        case '(':
-            printf("Открывающая скобка\n");
-            break;
-        case ')':
-            printf("Закрывающая скобка\n");
-            break;
-        case ' ':
-            printf("Пробел (не является знаком препинания, но часто используется)\n");
-            break;
-        default:
-            printf("Это не знак препинания или неизвестный символ.\n");
-            break;
+    case '.':
+        printf("Точка\n");
+        break;
+    case ',':
+        printf("Запятая\n");
+        break;
+    case ';':
+        printf("Точка с запятой\n");
+        break;
+    case ':':
+        printf("Двоеточие\n");
+        break;
+    case '!':
+        printf("Восклицательный знак\n");
+        break;
+    case '?':
+        printf("Вопросительный знак\n");
+        break;
+    case '-':
+        printf("Тире или дефис\n");
+        break;
+    case '"':
+        printf("Кавычки\n");
+        break;
+    case '\'':
+        printf("Апостроф\n");
+        break;
+    case '(':
+        printf("Открывающая скобка\n");
+        break;
+    case ')':
+        printf("Закрывающая скобка\n");
+        break;
+    case ' ':
+        printf("Пробел (не является знаком препинания, но часто используется)\n");
+        break;
+    default:
+        printf("Это не знак препинания или неизвестный символ.\n");
+        break;
     }
 
     return 0;
